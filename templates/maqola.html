@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <title>{{maqola.title}}</title>
+</head>
+<body>
+    <div class="container">
+        <h1>{{maqola.time.year}}</h1>
+        <h1>{{maqola.title}}</h1>
+        <div class="row">
+            <div class="col-12">
+                <p>{{maqola.matn}}</p>
+                {% for i in rasm %}
+                <img style="width: 100%; height: 700px;" src="{{ i.photo.url }}" alt="">
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row footer">
+            <p>© 2021 SMB.com</p>
+        </div>
+    </div>
+</body>
+</html>

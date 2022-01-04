@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <title>About</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar">
+            <div class="col-12 col-md-6 col-sm-6 navbar-icon"><a href="{% url 'home' %}">Sukhrobbek's Blog</a></div>
+            <div class="col-12 col-md-6 col-sm-6 navbar-link">
+                <div><a href="/about/"><b>About</b></a></div>
+                <div><a href="/blog/"><b>Blog</b></a></div>
+                <div><a href="#"><b>Channel</b></a></div>
+            </div>
+        </div>
+        <div class="row aboutme">
+            <div class="col-12">
+                <h1>About me</h1>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-12">
+                <p>I am Sukhrobbek Mukhammadjonov, a 20-year-old <b>Backend Developer</b> from Namangan, Uzbekistan, currently living in Ferghana, Uzbekistan.
+                    <br>
+                    <br>
+                     I am a student of the Tashkent University of Information Technologies of the Fergana branch</p>
+                    <center><img style="width:auto; height:600px; image-algin:center"  src="{% static 'media/Tatu.jpg' %}" alt=""></center>
+                    <h5><a href="https://www.google.com/maps/place/%D0%A2%D0%90%D0%A2%D0%A3+%D0%A4%D0%A4/@40.3647971,71.7750174,15z/data=!4m12!1m6!3m5!1s0x0:0x7bc998c6a195e3d5!2z0KLQkNCi0KMg0KTQpA!8m2!3d40.3647971!4d71.7750174!3m4!1s0x0:0x7bc998c6a195e3d5!8m2!3d40.3647971!4d71.7750174"><b>TUIT, Fergana</b></a></h5>
+                    <p>I am currently studying Python programming in the Django framework. I have been studying this environment for about a year.</p>
+                    <center><img style="width:auto; height:500px; image-algin:center" src="{% static 'media/django.jpg' %}" alt=""></center>
+                    <h5><b>Django framework</b></h5>
+                    <p>I am also known as <b>"lazy programmer"</b>, very handy nature for programmers. I love repetitive tasks, I see them as an opportunity for automation. Also, whenever I am not working standing, you find me working laying on a sofa.</p>
+                    <center><img style="width:auto; height:500px"src="{% static 'media/pr.jpg' %}" alt=""></center>
+                    <h5><b></b></h5>
+                    <p>In short, it's me, Sukhrobbek, a friendly programmer from Uzbekistan. You can read my story of becoming a Backend Developer.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2021 SMB.com</p>
+        </div>
+    </div>
+</body>
+</html>
